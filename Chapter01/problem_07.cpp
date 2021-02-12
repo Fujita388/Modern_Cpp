@@ -5,7 +5,7 @@
 
 int main() {
 	int div(int num);
-	std::vector<int> pair;  // 重複しないようにペアを保存
+	std::vector<int> pair;  // ペアを保存
 
 	for (int i = 1; i <= 1000000; ++i) {
 		if ((div(div(i)) == i) && (div(i) != i)) {  // 友愛数の条件
@@ -23,7 +23,6 @@ int main() {
 	std::cout << "は友愛数です" << '\n';
 	return 0;
 }
-
 
 
 // 自分以外の約数の和を返す
